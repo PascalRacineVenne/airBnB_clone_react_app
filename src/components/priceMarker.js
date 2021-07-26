@@ -1,9 +1,10 @@
 import React from 'react';
 import './priceMarker.css';
 
-const PriceMarker = ({price}) => {
+const PriceMarker = ({price, selected}) => {
+  const classes = `marker ${selected ? "selected" : ""}`
   return(
-    <div className="marker">
+    <div className={classes}>
       {price}
     </div>
   );

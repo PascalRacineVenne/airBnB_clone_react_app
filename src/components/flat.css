@@ -16,3 +16,7 @@
   font-weight: bold;
   padding: 16px;
 }
+
+.flat.selected {
+  box-shadow: 0 0 0 4px orange;
+}

@@ -6,3 +6,7 @@
   border: 1px solid gray;
   padding: 4px;
 }
+
+.marker.selected {
+  background-color: orange;
+}
