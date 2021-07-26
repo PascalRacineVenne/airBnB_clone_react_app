@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Flat from './components/flat';
+import Map from './components/map';
 
 // const tmpFlat = {
 //   id: 145,
@@ -13,7 +14,8 @@ import Flat from './components/flat';
 // }
 
 const App = () => {
-  const [flats, setFlats]= useState([]);
+  const [flats, setFlats] = useState([]);
+  // const [] = useState();
 
   useEffect(() => {
     fetch("https://raw.githubusercontent.com/clairefro/flats-boilerplate/master/flats.json")
@@ -22,17 +24,18 @@ const App = () => {
   }, [])
 
   return (
-    <div className="App">
-    <div className="main">
-      <div className="search">
+    <div className="app">
+      <div className="main">
+        <div className="search"> </div>
+        <div className="flats">
+          {flats.map(flat => (
+            <Flat key={flat.id} data={flat} />
+          ))}
+        </div>
       </div>
-      <div className="flats">
-        {flats.map(flat => (
-          <Flat key={flat.id} data={flat} />
-        ))}
+      <div className="map">
+        <Map flats={flats}/>
       </div>
-    </div>
-    <div className="map"> </div>
     </div>
   );
 }
