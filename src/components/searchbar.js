@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 
 import './searchbar.css';
 
-const Searchbar = () => {
-  const [input, setInput] = useState({
-    value: ""
-  })
+const Searchbar = ({ flats, setFlats }) => {
+  // const [search, setSearch] = useState("");
 
   const handleSearch = (e) => {
-    // assign input to a variable
-    // console.log("hi from onChange", e.target.value);
-
-    //
+    // setSearch(e.target.value);
   }
+
+  // const filterFlats = (search) => {
+  //   const filteredFlats = flats.filter(flat => new RegExp(search, "i").exec(flat.name))
+  //   setFlats(filteredFlats)
+  // }
 
   return (
     <div className="searchbar">

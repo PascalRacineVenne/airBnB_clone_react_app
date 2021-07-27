@@ -18,7 +18,10 @@ const App = () => {
     <div className="app">
       <div className="main">
         <div className="search">
-          <Searchbar />
+          <Searchbar
+            // flats={flats}
+            // setFlats={setFlats}
+          />
         </div>
         <div className="flats">
           {flats.map(flat => (
