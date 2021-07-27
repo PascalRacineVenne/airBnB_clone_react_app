@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import './searchbar.css';
+
 const Searchbar = () => {
   const [input, setInput] = useState({
     value: ""
@@ -13,8 +15,9 @@ const Searchbar = () => {
   }
 
   return (
-    <div>
+    <div className="searchbar">
       <input
+        className="input"
         type="text"
         placeholder="search..."
         value=""

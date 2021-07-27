@@ -20,3 +20,8 @@
   flex-wrap: wrap;
   align-content: flex-start;
 }
+
+.search {
+  flex-basis: 60%;
+  display: flex;
+}
