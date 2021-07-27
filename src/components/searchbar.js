@@ -7,7 +7,7 @@ const Searchbar = () => {
 
   const handleSearch = (e) => {
     // assign input to a variable
-    console.log("hi from onChange", e.target.value);
+    // console.log("hi from onChange", e.target.value);
 
     //
   }
